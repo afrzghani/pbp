@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" cellpadding="10" cellspacing="0">
+    <!-- <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th rowspan="2">No</th>
             <th rowspan="2">Nama Makanan</th>
@@ -54,6 +54,36 @@
             <td>sehat</td>
             <td>5gr</td>
         </tr>
-    </table>
+    </table> -->
+
+    <!-- <form action="">
+        <p>Nama: <input type="text" name="Nama" id=""></p>
+        <p>Tanggal Lahir: <input type="date" name="TglLahir" id=""></p>
+        <p>Email: <input type="email" name="Email" id=""></p>
+        <p>Password: <input type="password" name="Password" id=""></p>
+        <input type="submit" value="Kirim">
+        <select name="UkuranBaju" id="">
+            <option value="s">Laki-laki</option>
+            <option value="m">Perempuan</option>
+        </select>
+    </form> -->
+
+    <fieldset>
+        <legend>Identitas Pribadi</legend>
+        <p>Nama: <input type="text" name="Nama" id="" placeholder="Masukkan Nama Lengkap"></p>
+        <p>Tanggal Lahir: <input type="date" name="TglLahir" id="" ></p>
+        <p>Email: <input type="email" name="Email" id="" placeholder="Masukkan Email Anda"></p>
+        <p>Password: <input type="password" name="Password" id="" placeholder="Masukkkan Password Anda"></p>
+        <p>Ukuran Baju:<select name="UkuranBaju" id="">
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+        </select>
+        </p>
+
+        <button type="submit" value="Kirim">Kirim</button>
+        <button type="reset">Reset</button>
+    </fieldset>
 </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Lomba Hackathon</title>
+</head>
+<body marginwidth="20%">
+    <h1 align="center" >Formulir Pendaftaran Lomba Hackathon</h1>
+    <fieldset>
+        <legend>Data Diri Ketua Tim</legend>
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>: <input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Email</td>
+                <td>: <input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>: <input type="date" name="tgl_lahir" id="tgl_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: <select name="jk" required>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td>: <input type="tel" name="tlp" id="tlp" required></td>
+            </tr>
+            <tr>
+                <td>Nama Tim</td>
+                <td>: <input type="text" name="tim" required></td>
+            </tr>
+            <tr>
+                <td>Nama Universitas</td>
+                <td>: <input type="text" name="uni" required></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: <input type="text" name="prodi" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Data Diri Anggota Tim 1</legend>
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>: <input type="text" name="nama1" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Email</td>
+                <td>: <input type="email" name="email1" id="email1" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>: <input type="date" name="tgl_lahir" id="tgl_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: <select name="jk" required>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: <input type="text" name="prodi1" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Data Diri Anggota Tim 2</legend>
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>: <input type="text" name="nama2" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Email</td>
+                <td>: <input type="email" name="email2" id="email2" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>: <input type="date" name="tgl_lahir" id="tgl_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: <select name="jk" required>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: <input type="text" name="prodi2" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Data Diri Anggota Tim 3</legend>
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>: <input type="text" name="nama3" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Email</td>
+                <td>: <input type="email" name="email3" id="email3" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>: <input type="date" name="tgl_lahir" id="tgl_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: <select name="jk" required>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: <input type="text" name="prodi3" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Kompetisi</legend>
+        <p>Kategori Lomba</p>
+        <input type="radio" name="kategori" id="kategori1" value="cp">Competitive Programming
+        <input type="radio" name="kategori" id="kategori2" value="aiml">AI/ML
+        <input type="radio" name="kategori" id="kategori3" value="webdev">Web Development
+        <input type="radio" name="kategori" id="kategori4" value="mobile">Mobile App
+        <input type="radio" name="kategori" id="kategori5" value="iot">IoT
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dokumen</legend>
+        <table>
+            <tr>
+                <td>KTM (dijadikan 1 pdf)</td>
+                <td>: <input type="file" name="ktm" id="ktm"></td>
+            </tr>
+            <tr>
+                <td>Surat Rekomendasi</td>
+                <td>: <input type="file" name="suratrekom" id="suratrekom"></td>
+            </tr>
+            <tr>
+                <td>Surat Pernyataan</td>
+                <td>: <input type="file" name="suratpernyataan" id="suratpernyataan"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <p><input type="checkbox" name="check" required>Saya menyetujui syarat & ketentuan Hackathon</p>
+    <button type="submit">Kirim Pendaftaran</button>
+</body>
+</html>
