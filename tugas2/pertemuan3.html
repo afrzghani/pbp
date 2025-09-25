@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .berita {
+            padding: 10px;
+            margin: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid #ff3bdb;
+            background-color: rgb(248, 215, 244);
+            border-radius: 8px;
+        }
+        #dokumentasi {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        #judul{
+            background: linear-gradient(to right, rgb(162, 46, 175), rgb(246, 183, 75));
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .nav {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+    animation: kelap-kelip 1.5s infinite;
+        }
+
+        @keyframes kelap-kelip {
+            0%   { background: #ff3b3b; }
+            25%  { background: #ffd900; }
+            50%  { background: #4eaf2e; }
+            75%  { background: #763fee; }
+            100% { background: #ff3b3b; }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <h1 style="color: white; text-align: center;">Berita Terkini</h1>
+        <hr>
+    </header>
+    <div class="container">
+        <div class="berita">
+            <h1 id="judul">Prabowo Teriakkan "Hidup Jokowi" di HUT Gerindra</h1>
+            <img id="dokumentasi" src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2025/02/15/1405299166.jpg" alt="Prabowo" width="400px" height="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime voluptate? Harum provident exercitationem sint inventore voluptates nam ut, quaerat iure minus beatae, dolorum ratione nostrum, nesciunt commodi ullam architecto.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+        <div class="berita">
+            <h1 id="judul">Rumah Ahmad Sahroni Jadi Sasaran Kemarahan Hingga Penjarahan Rakyat</h1>
+            <img id="dokumentasi" src="https://ftnews.co.id/storage/comp/Ahmad%20Sahroni%20Caddy%20Golf%20020920252.jpg" alt="Sahroni" width="400px" height="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime voluptate? Harum provident exercitationem sint inventore voluptates nam ut, quaerat iure minus beatae, dolorum ratione nostrum, nesciunt commodi ullam architecto.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
