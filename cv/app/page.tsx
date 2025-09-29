@@ -74,7 +74,7 @@ export default function Page() {
                       </div>
                       <p className="subteks-timeline">Graphic Designer</p>
                       <ul className="timeline-list">
-                          <li>Mengembangkan dan mengelola branding serta identitas perusahaan</li>
+                          <li>Mengelola branding serta identitas perusahaan</li>
                           <li>Meningkatkan presentasi profil perusahaan, digunakan pada lebih dari 10 proposal klien</li>
                           <li>Mendesain konten digital dan meningkatkan kehadiran website & media sosial</li>
                           <li>Mendokumentasikan acara dan membuat aset visual untuk kebutuhan perusahaan</li>

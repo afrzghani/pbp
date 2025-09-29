@@ -84,7 +84,7 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
         if (isBilling) {
           const local = basicSummarize(content)
           setSummary(`(Ringkasan lokal tanpa AI)\n\n${local}`)
-          setError("AI belum diaktifkan. Menampilkan ringkasan lokal.")
+          setError("AI belum diaktifkan, Menampilkan ringkasan lokal.")
           return
         }
         throw new Error(text || "Gagal merangkum.")

@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
     const prompt =
       language === "id"
-        ? `Ringkas CV berikut menjadi satu paragraf singkat, informatif, dan mudah dibaca (bukan bullet point), seolah-olah orang lain yang membacakan (gunakan sudut pandang orang ketiga). Fokus pada: jabatan, lama pengalaman, dampak, keahlian inti, dan alat/teknologi. Hindari kalimat bertele-tele. Konten:\n\n${content}`
+        ? `Ringkas CV berikut menjadi satu paragraf singkat, informatif, dan mudah dibaca (bukan bullet point), seolah-olah orang lain yang membacakan (.gunakan sudut pandang orang ketiga). Fokus pada: jabatan, lama pengalaman, dampak, keahlian inti, dan alat/teknologi. Hindari kalimat bertele-tele. Konten:\n\n${content}`
         : `Summarize the following CV into a single, concise, informative paragraph (not bullet points), as if written by someone else (use third-person perspective). Focus on: roles, years of experience, impact, core skills, and tools/technologies. Avoid fluff. Content:\n\n${content}`
 
     console.log("summarize using Groq model:", "llama-3.1-8b-instant")
