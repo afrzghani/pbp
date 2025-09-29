@@ -3,8 +3,14 @@
 import { useCallback, useMemo, useState } from "react"
 
 type Props = {
+<<<<<<< HEAD
   targetSelector?: string
 
+=======
+  // CSS selector yang menunjuk ke konten CV untuk dirangkum
+  targetSelector?: string
+  // Bahasa ringkasan, default "id"
+>>>>>>> 0ca84e10ed0614782ca9368850695d1a1adf8a91
   language?: "id" | "en"
 }
 
@@ -46,6 +52,7 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
     }
     const skillsList = skills.slice(0, 6).join(", ")
 
+<<<<<<< HEAD
     // Gabungkan info penting jadi satu paragraf
     let summary = ""
     if (roleLine) summary += `Peran utama: ${roleLine}. `
@@ -55,6 +62,25 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
     if (!summary) summary = lines.find((l) => l.length > 20) || "CV ringkasan tidak tersedia."
 
     return summary.trim()
+=======
+    const bullets: string[] = []
+    if (roleLine) bullets.push(`Peran utama: ${roleLine}.`)
+    if (pengalaman) bullets.push(`Pengalaman: ${pengalaman}.`)
+    if (impactLines[0]) bullets.push(`Dampak: ${impactLines[0]}`)
+    if (impactLines[1]) bullets.push(`Dampak lain: ${impactLines[1]}`)
+    if (skillsList) bullets.push(`Keahlian inti: ${skillsList}.`)
+
+    while (bullets.length < 5) {
+      const next = lines.find((l) => l.length > 20 && !bullets.includes(l))
+      if (!next) break
+      bullets.push(next)
+    }
+
+    return bullets
+      .slice(0, 7)
+      .map((b) => `• ${b}`)
+      .join("\n")
+>>>>>>> 0ca84e10ed0614782ca9368850695d1a1adf8a91
   }, [])
 
   const canSummarize = useMemo(() => !loading, [loading])
@@ -84,7 +110,11 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
         if (isBilling) {
           const local = basicSummarize(content)
           setSummary(`(Ringkasan lokal tanpa AI)\n\n${local}`)
+<<<<<<< HEAD
           setError("AI belum diaktifkan, Menampilkan ringkasan lokal.")
+=======
+          setError("AI belum diaktifkan. Menampilkan ringkasan lokal.")
+>>>>>>> 0ca84e10ed0614782ca9368850695d1a1adf8a91
           return
         }
         throw new Error(text || "Gagal merangkum.")
