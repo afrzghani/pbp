@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container text-center my-3">
+        <p id="teks">90</p>
+        <button id="btnLulus" class="btn btn-primary">
+            Lulus / Tambah 5
+        </button>
+
+        <button id="btnTidakLulus" class="btn btn-danger">
+            Tidak Lulus / Kurang 5
+        </button>
+        <p id="ucapan"></p>
+    </div>
+
+    <script>
+        var nilai = Number(teks.textContent);
+        console.log(nilai);
+
+
+        const lulus = document.getElementById("btnLulus");
+        lulus.addEventListener("click", () => {
+            nilai = nilai + 5;
+            teks.textContent = nilai;
+            ucapan.textContent = "Selamat Anda Lulus!"
+        })
+        const tidakLulus = document.getElementById("btnTidakLulus");
+        tidakLulus.addEventListener("click", () => {
+            nilai = nilai - 5;
+            teks.textContent = nilai;
+            ucapan.textContent = "Maaf Anda Tidak Lulus!"
+        })
+        const ucapan = document.getElementById("ucapan");
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
