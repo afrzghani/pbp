@@ -1,1 +1,1 @@
-Repo ini adalah kumpulan pertemuan dan tugas di mata kuliah PBP TI Unesa semester 3
+Repositori ini berisi kumpulan tugas dan proyek yang dikerjakan selama mata kuliah Pemrograman Berbasis Platform.
